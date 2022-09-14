@@ -78,7 +78,7 @@ function atualizarDados(formData){
 }
 
 function deletarDados(td){
-    if(confirm("Voce realmente quer deletar os dados?")){
+    if(confirm("Você realmente quer deletar os dados?")){
         let row = td.parentElement.parentElement;
         document.getElementById("tabela").deleteRow(row.rowIndex);
         resetarFormulario();
