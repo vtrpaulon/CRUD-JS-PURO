@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD-JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input 
+                        type="text" 
+                        name="nome" 
+                        id="nome" 
+                        placeholder="Nome">
+                    </div>
+                    <div>
+                        <label for="publicações">Publicações</label>
+                        <input 
+                        type="number" 
+                        name="publicações" 
+                        id="publicações" 
+                        placeholder="Publicações">
+                    </div>
+                    <div>
+                        <label for="videos">Videos</label>
+                        <input 
+                        type="number" 
+                        name="videos" 
+                        id="videos" 
+                        placeholder="Videos">
+                    </div>
+                    <div>
+                        <label for="horas">Horas</label>
+                        <input 
+                        type="number" 
+                        name="horas" 
+                        id="horas" 
+                        placeholder="Horas">
+                    </div>
+                    <div>
+                        <label for="revisitas">Revisitas</label>
+                        <input 
+                        type="number" 
+                        name="revisitas "
+                        id="revisitas" 
+                        placeholder="Revisitas">
+                    </div>
+                    <div>
+                        <label for="estudos">Estudos</label>
+                        <input 
+                        type="number" 
+                        name="estudos" 
+                        id="estudos" 
+                        placeholder="Estudos">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </th>
+            <th>
+                <table class="list" id="list">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Publicações</th>
+                            <th>Videos</th>
+                            <th>Horas</th>
+                            <th>Revisitas</th>
+                            <th>Estudos</th>   
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </th>           
+        </tr>
+    </table>
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
